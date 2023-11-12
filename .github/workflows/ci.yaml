@@ -16,7 +16,7 @@ jobs:
       - name: SSH and deploy
         env: 
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}} # reference to github secrets
-          ec2_url: "ec2-3-111-186-211.ap-south-1.compute.amazonaws.com"
+          ec2_url: "ec2-13-234-120-233.ap-south-1.compute.amazonaws.com"
         run: |
           echo "$SSH_PRIVATE_KEY" > keyfile
           chmod 600 keyfile
