@@ -12,6 +12,9 @@ app.use(express.json());
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
+app.get("/", (req, res) =>{
+    res.json({msg : "the backend is working correctly!!"});
+})
 
 // Connect to MongoDB
 // DONT MISUSE THIS THANKYOU!!
