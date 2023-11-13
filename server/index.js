@@ -13,7 +13,7 @@ app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
 app.get("/", (req, res) =>{
-    res.json({msg : "the backend is working correctly!!"});
+    res.json({msg : "the backend is working correctly!! check for other issues."});
 })
 
 // Connect to MongoDB
